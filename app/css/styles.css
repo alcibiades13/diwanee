@@ -913,6 +913,8 @@ header.main-header {
     background-size: 30px 30px;
     margin-top: 10px;
     margin-right: 10px; }
+    .hamburger.button-x {
+      background-image: url(../images/x.png); }
   .main-nav {
     display: none;
     position: absolute;

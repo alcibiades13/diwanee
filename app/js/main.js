@@ -4,6 +4,8 @@ $(document).ready(function () {
         e.preventDefault();
 
         $('.main-nav').slideToggle(150);
+
+        $(this).toggleClass('button-x');
     });
 
     if($( window ).width() < 320) {
@@ -14,7 +16,6 @@ $(document).ready(function () {
         });
 
     }
-
 
     // smooth scrolling
 

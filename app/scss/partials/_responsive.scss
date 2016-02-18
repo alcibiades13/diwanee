@@ -262,6 +262,10 @@
       background-size: 30px 30px;
       margin-top: 10px;
       margin-right: 10px;
+
+      &.button-x {
+        background-image: url(../images/x.png);
+      }
   }
 
 
