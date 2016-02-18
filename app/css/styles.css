@@ -756,11 +756,16 @@ header.main-header {
         letter-spacing: 2px;
         text-transform: uppercase; }
         .footer .location-wrapper .location h3.city::before {
-          content: url(../images/place-pin-ico.png);
+          content: "";
+          background-image: url(../images/place-pin-ico.png);
           margin-right: 15px;
-          height: 30px;
+          height: 25px;
+          width: 20px;
+          -webkit-background-size: 20px 25px;
+          background-size: 20px 25px;
           position: relative;
-          top: 5px; }
+          top: 5px;
+          display: inline-block; }
   .footer .copyright {
     display: block;
     background-color: #242424;
@@ -804,8 +809,6 @@ header.main-header {
       width: 90%;
       top: 40%;
       text-transform: uppercase; }
-      .main-banner .top-content .mobile-hide {
-        display: none; }
   .processes .process {
     width: 100%; }
     .processes .process h2 {
@@ -826,9 +829,19 @@ header.main-header {
     line-height: 14px; }
   .jobs .jobs-wrapper .position {
     padding: 10px 0; }
+    .jobs .jobs-wrapper .position:nth-of-type(odd) {
+      background-color: #ededed; }
+      .jobs .jobs-wrapper .position:nth-of-type(odd):hover {
+        background-color: #ededed; }
+    .jobs .jobs-wrapper .position:hover {
+      background-color: white; }
+      .jobs .jobs-wrapper .position:hover h2, .jobs .jobs-wrapper .position:hover a.job-apply {
+        color: black; }
+      .jobs .jobs-wrapper .position:hover .tag {
+        color: #C41230; }
     .jobs .jobs-wrapper .position .position-content {
       width: 100%;
-      padding: 10px; }
+      padding: 15px; }
       .jobs .jobs-wrapper .position .position-content h2 {
         font-size: 8px; }
       .jobs .jobs-wrapper .position .position-content p {
@@ -843,5 +856,74 @@ header.main-header {
         border: 0;
         padding: 0; }
   .jobs .load-more {
-    font-size: 9px;
-    width: 70%; } }
+    font-size: 7px;
+    width: 70%; }
+  .about {
+    padding: 24px 0; }
+    .about h1 {
+      font-size: 20px; }
+      .about h1::after {
+        margin: 6px 0;
+        width: 30px;
+        left: calc(50% - 15px);
+        border-bottom: 2px solid #C41230; }
+    .about .about-text {
+      font-size: 14px;
+      width: 100%;
+      padding: 15px;
+      margin-top: 24px; }
+  .footer .location-wrapper .location {
+    width: 100%;
+    text-align: center;
+    margin-right: 0; }
+    .footer .location-wrapper .location h3.city {
+      font-size: 9px; }
+      .footer .location-wrapper .location h3.city::before {
+        height: 15px;
+        width: 15px;
+        display: inline-block;
+        background-size: 15px 15px;
+        top: 2px;
+        margin-right: 8px; }
+    .footer .location-wrapper .location .address {
+      font-size: 9px;
+      line-height: 15px; }
+  .footer .copyright {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-box;
+    display: -o-box;
+    display: box;
+    overflow: hidden;
+    height: 100px;
+    position: relative; }
+    .footer .copyright .copyright-container {
+      width: 100%;
+      height: 100%; }
+      .footer .copyright .copyright-container .links {
+        height: 50px;
+        display: block;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 10px;
+        text-align: center;
+        -webkit-box-ordinal-group: 2;
+        -moz-box-ordinal-group: 2;
+        box-ordinal-group: 2; }
+      .footer .copyright .copyright-container .copyright-text {
+        height: 50px;
+        display: block;
+        width: 100%;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        background-color: #333333;
+        padding: 10px;
+        text-align: center;
+        -webkit-box-ordinal-group: 3;
+        -moz-box-ordinal-group: 3;
+        box-ordinal-group: 3; }
+  .mobile-hidden {
+    display: none !important; } }
