@@ -1,0 +1,113 @@
+/*=========================================
+=            Responsive styles            =
+=========================================*/
+
+
+@media screen and (max-width: 340px) {
+
+  .main-banner {
+    height: 500px;
+
+    h1 {
+      font-size: 30px;
+      top: 35%;
+
+      &::after {
+        margin: 6px 0;
+        width: 30px;
+        left: calc(50% - 15px);
+        border-bottom: 2px solid $dark-red;
+      }
+    }
+
+    .top-content {
+      font-size: 18px;
+      line-height: 22px;
+      width: 90%;
+      top: 40%;
+      text-transform: uppercase;
+
+      .mobile-hide {
+        display: none;
+      }
+    }
+  }
+
+  .processes {
+
+    .process {
+      width: 100%;
+
+      h2 {
+        font-size: 12px;
+      }
+
+      p {
+        font-size: 9px;
+      }
+    }
+  }
+
+  .section-span {
+    font-size: 12px;
+  }
+
+  .jobs {
+
+    h1 {
+      font-size: 20px;
+
+      &::after {
+        margin: 6px 0;
+        width: 30px;
+        left: calc(50% - 15px);
+        border-bottom: 2px solid $dark-red;
+      }
+    }
+
+    .positions-intro {
+      font-size: 11px;
+      line-height: 14px;
+    }
+
+    .jobs-wrapper {
+      .position {
+        padding: 10px 0;
+
+        .position-content {
+          width: 100%;
+          padding: 10px;
+
+          h2 {
+            font-size: 8px;
+          }
+
+          p {
+            font-size: 8px;
+            line-height: 11px;
+            margin-bottom: 10px;
+          }
+
+          a.job-apply {
+            font-size: 8px;
+            display: none;
+          }
+
+          .tag {
+            font-size: 7px;
+            border: 0;
+            padding: 0;
+          }
+
+        }
+      }
+    }
+
+    .load-more {
+      font-size: 9px;
+      width: 70%;
+    }
+
+  }
+
+}

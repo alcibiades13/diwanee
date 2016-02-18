@@ -1,0 +1,19 @@
+/*===========================================
+=            Social media styles            =
+===========================================*/
+
+
+.social {
+  padding: $general-margin;
+  text-align: center;
+
+  .social-icons {
+    margin-top: $baseline;
+
+    img {
+      width: 60px;
+      height: 60px;
+      margin: 0 8px;
+    }
+  }
+}

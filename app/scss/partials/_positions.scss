@@ -1,0 +1,144 @@
+/*=============================================
+=            Open positions styles            =
+=============================================*/
+
+
+.jobs {
+  padding-top: $general-margin;
+  padding-bottom: $general-margin;
+  clear: both;
+  text-align: center;
+
+  .positions-header {
+    text-align: center;
+  }
+
+  h1 {
+    text-transform: uppercase;
+    font-size: 60px;
+    letter-spacing: 3px;
+    font-family: "SourceSansPro-Semibold";
+
+    &::after {
+        content: "";
+        display: block;
+        width: 60px;
+        height: 0;
+        border-bottom: 3px solid $dark-red;
+        position: absolute;
+        margin: $baseline 0;
+        left: calc(50% - 30px);
+    }
+  }
+
+  .positions-intro {
+    font-size: 36px;
+    line-height: 50px;
+    color: $dark-grey;
+    max-width: 65%;
+    margin: $baseline auto;
+  }
+
+  .jobs-wrapper {
+    width: 100%;
+    margin-top: $general-margin;
+
+    .position {
+      color: white;
+      padding: $general-margin 0;
+      width: 100%;
+      transition: all .2s ease-in-out;
+
+      .position-content {
+        width: $small-container;
+        margin: 0 auto;
+        text-align: left;
+
+        h2 {
+          text-transform: uppercase;
+          margin: 0 0 $baseline 0;
+          color: black;
+          font-family: "SourceSansPro-Semibold";
+        }
+
+        p {
+          display: inline-block;
+          color: $grey;
+          font-family: "SourceSansPro-Light";
+          font-size: 24px;
+          line-height: 34px;
+          max-width: 80%;
+          margin-bottom: $baseline;
+        }
+
+        a.job-apply {
+          float: right;
+          color: $dark-grey;
+          font-size: 18px;
+          line-height: 23px;
+          letter-spacing: 2px;
+          text-decoration: none;
+          padding: 3px 15px;
+          border: 1px solid #979797;
+          text-transform: uppercase;
+
+          &:hover {
+            background-color: $grey;
+            color: black;
+            transition: all .2s ease-in-out;
+          }
+        }
+
+        .tag {
+          padding: 3px 10px;
+          font-size: 16px;
+          color: #C41230;
+          font-family: "SourceSansPro-Regular";
+          border: 1px solid $grey;
+          cursor: pointer;
+          margin: 0 5px;
+          letter-spacing: 2px;
+
+          &:hover {
+            color: $light-grey;
+          }
+        }
+      }
+
+      &:hover {
+        background-color: $dark-grey;
+
+        h2, a.job-apply, .tag {
+          color: white;
+        }
+      }
+
+    }
+  }
+
+  .load-more {
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    padding: 5px 40px;
+    border: 1px solid $light-grey;
+    font-family: "SourceSansPro-Semibold";
+    text-align: center;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin: $baseline auto;
+    transition: all .2s ease-in-out;
+
+    &:hover {
+      background-color: $light-grey;
+    }
+  }
+}
+
+.section-span {
+  color: $grey;
+  font-size: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}

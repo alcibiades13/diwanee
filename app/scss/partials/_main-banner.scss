@@ -1,0 +1,52 @@
+/**
+*--------------------------------------------------------------------------------------------------------
+* Main banner styles
+*--------------------------------------------------------------------------------------------------------
+*/
+
+.main-banner {
+    width: 100%;
+    height: 750px;
+    background-image: url(../images/diwanee-cover.png);
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: left bottom;
+    color: $white;
+    font-weight: bold;
+    text-align: center;
+
+    h1 {
+        position: relative;
+        text-align: center;
+        top: 30%;
+        margin-top: 0;
+        display: block;
+        font-family: "SourceSansPro-Semibold";
+        font-size: 120px;
+        color: $dark-grey;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+
+        &::after {
+            content: "";
+            display: block;
+            width: 60px;
+            height: 0;
+            border-bottom: 3px solid $dark-red;
+            position: absolute;
+            left: calc(50% - 30px);
+            bottom: -20px;
+        }
+    }
+
+    .top-content {
+        color: $dark-grey;
+        letter-spacing: 1px;
+        line-height: 40px;
+        font-size: 30px;
+        position: relative;
+        width: 58%;
+        top: 25%;
+        margin: 0 auto;
+    }
+}
