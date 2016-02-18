@@ -180,14 +180,10 @@
     }
 
     .copyright {
-      display: -webkit-box;
-      display: -moz-box;
-      display: -ms-box;
-      display: -o-box;
-      display: box;
       overflow: hidden;
       height: 100px;
       position: relative;
+      width: 300px;
 
       .copyright-container {
         width: 100%;
@@ -202,6 +198,7 @@
           left: 0;
           padding: 10px;
           text-align: center;
+          float: none;
 
           -webkit-box-ordinal-group: 2;
           -moz-box-ordinal-group: 2;
