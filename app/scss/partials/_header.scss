@@ -15,7 +15,6 @@ header.main-header {
 
     .logo {
         width: 100px;
-        // height: 34px;
         display: inline-block;
         float: left;
         margin-top: $baseline;
@@ -26,20 +25,6 @@ header.main-header {
             height: auto;
         }
     }
-}
-
-/* reponsive meni */
-.hamburger {
-    color: $grey;
-    text-decoration: none;
-    display: none;
-    float: right;
-    padding-top: 1em;
-    padding-right: $baseline;
-    position: absolute;
-    right: 0;
-    top: 0;
-    z-index: 20;
 }
 
 .main-nav {
@@ -58,6 +43,10 @@ header.main-header {
             display: inline-block;
             // height: 60px;
             padding: 0 30px;
+
+            &.menu-social {
+                display: none;
+            }
 
             a {
                 color: $dark-grey;
@@ -79,46 +68,4 @@ header.main-header {
         }
     }
 
-}
-
-@media screen and (max-width: 1040px) {
-    .main-nav {
-        display: none;
-        position: relative;
-        z-index: 9;
-
-        ul {
-            background-color: $black;
-            position: relative;
-            z-index: 11;
-
-             li {
-                display: block;
-                width: 100%;
-                padding: $baseline 0;
-                background-color: $black;
-
-                a {
-                    width: 100%;
-                     background-color: $black;
-                     display: block;
-                     font-size: 2em;
-                }
-
-                &::before {
-                    display: none;
-                    content: "";
-                }
-            }
-        }
-    }
-
-    .hamburger {
-        display: initial;
-
-    }
-}
-
-.visible {
-    display: initial;
 }
