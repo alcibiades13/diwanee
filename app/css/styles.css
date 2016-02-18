@@ -753,7 +753,7 @@ header.main-header {
 /*=========================================
 =            Responsive styles            =
 =========================================*/
-@media screen and (max-width: 340px) {
+@media screen and (max-width: 320px) {
   .main-banner {
     height: 500px; }
     .main-banner h1 {
